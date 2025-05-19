@@ -6,9 +6,17 @@ namespace TodoApi.Controllers
     [Route("api/[controller]")]
     public class TodoController : ControllerBase
     {
-        private static readonly List<string> Todos = new() { "Learn DevOps", "Build CI/CD" };
+        [HttpGet]
+        public async Task<List<string>> Todos()
+        {
+            var todos = new List<string> { "Learn DevOps", "Build CI/CD","xxx" };
+            return todos;
+        }
 
         [HttpGet]
-        public async Task<IActionResult> GetTodos() =>  Ok(Todos);
+        public async Task<IActionResult> GetTodos()
+        {
+            return   Ok(await Todos());
+        }  
     }
 }
