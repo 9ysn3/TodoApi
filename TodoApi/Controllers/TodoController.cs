@@ -7,7 +7,7 @@ namespace TodoApi.Controllers
     public class TodoController : ControllerBase
     {
         [HttpGet]
-        public async Task<List<string>> Todos()
+         async Task<List<string>> Todos()
         {
             var todos = new List<string> { "Learn DevOps", "Build CI/CD","xxx" };
             return todos;
