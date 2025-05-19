@@ -1,0 +1,16 @@
+# Visual Studio temporary files
+.vs/
+.vscode/
+
+# .NET Core
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userprefs
+
+# NuGet Packages
+*.nupkg
+packages/

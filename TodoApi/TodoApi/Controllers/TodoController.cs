@@ -9,6 +9,6 @@ namespace TodoApi.Controllers
         private static readonly List<string> Todos = new() { "Learn DevOps", "Build CI/CD" };
 
         [HttpGet]
-        public IActionResult GetTodos() => Ok(Todos);
+        public async Task<IActionResult> GetTodos() =>  Ok(Todos);
     }
 }
