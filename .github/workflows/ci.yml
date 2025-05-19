@@ -16,9 +16,9 @@ jobs:
       uses: actions/setup-dotnet@v3
       with:
         dotnet-version: '8.0.x'
-    - name: Restore dependencies
-      run: dotnet restore TodoApi/TodoApi.csproj TodoApi.Tests/TodoApi.Tests.csproj
+    name: Restore dependencies
+      run: dotnet restore TodoApi.sln
     - name: Build
-      run: dotnet build TodoApi/TodoApi.csproj TodoApi.Tests/TodoApi.Tests.csproj --no-restore
+      run: dotnet build TodoApi.sln --no-restore
     - name: Test
-      run: dotnet test TodoApi.Tests/TodoApi.Tests.csproj --no-build --verbosity normal
+      run: dotnet test TodoApi.sln --no-build --verbosity normal

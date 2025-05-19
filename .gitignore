@@ -1,0 +1,32 @@
+# Visual Studio وملفات مؤقتة
+.vs/
+bin/
+obj/
+*.user
+*.suo
+*.userprefs
+
+# NuGet Packages
+packages/
+*.nupkg
+
+# Build output
+[Dd]ebug/
+[Rr]elease/
+build/
+bld/
+
+# Test Results
+TestResults/
+
+# macOS/Linux files
+.DS_Store
+
+# Windows files
+Thumbs.db
+
+# Specific to this project (TodoApi and TodoApi.Tests)
+TodoApi/bin/
+TodoApi/obj/
+TodoApi.Tests/bin/
+TodoApi.Tests/obj/
