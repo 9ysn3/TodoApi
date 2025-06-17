@@ -9,7 +9,7 @@ namespace TodoApi.Controllers
         [HttpGet]
          async Task<List<string>> Todos()
         {
-            var todos = new List<string> { "Learn DevOps", "Build CI/CD","xxx" };
+            var todos = new List<string> { "Learn DevOps", "Build CI/CD","؛Publish to github" };
             return todos;
         }
 

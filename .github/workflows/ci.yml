@@ -22,3 +22,10 @@ jobs:
       run: dotnet build TodoApi.sln --no-restore
     - name: Test
       run: dotnet test TodoApi.sln --no-build --verbosity normal
+    - name: Publish
+      run: dotnet publish TodoApi/TodoApi.csproj --configuration Release --output ./publish
+    - name: Upload Publish Artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: published-app
+        path: ./publish/
